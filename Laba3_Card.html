@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Web-Лабораторные</title>
+	
+</head>
+<style type="text/css">
+	.Rectangle{
+		width: 850px;
+		height: 500px;
+		background: #B0C4DE;
+		border-radius: 15px;
+		position: fixed;
+		left: 250px;
+		top: 80px;
+		border: 5px outset #191970;
+		padding: 5px;
+		color: #191970;
+		display: block;
+	}
+	.Rectangle1{
+		width: 850px;
+		height: 500px;
+		background: #191970;
+		border-radius: 15px;
+		position: fixed;
+		left: 250px;
+		top: 80px;
+		border: 5px outset #4B0082;
+		padding: 5px;
+		color: white;
+		display: block;
+	}
+	.RestangleForTheFunction{
+		width: 850px;
+		height: 500px;
+		background: #B0C4DE;
+		border-radius: 15px;
+		position: fixed;
+		left: 250px;
+		top: 80px;
+		border: 5px outset #191970;
+		padding: 5px;
+		color: #191970;
+		display: none;
+	}
+	.text{
+		position: fixed;
+		left: 615px;
+		top:160px;
+		font-size: 18px;
+		display: block;
+	}
+	.text1{
+		position: fixed;
+		left: 800px;
+		top:70px;
+	}
+	.text2{
+		position: fixed;
+		left: 615px;
+		top:130px;
+		font-size: 18px;
+	}
+	.Img{
+		height: 450px;
+		width: 320px;
+		position: fixed;
+		left:280px;
+		top:110px;
+		border: 3px outset #E0FFFF;
+		border-radius: 15px;
+	}
+	.Pets{
+		display: none;
+	}
+	.Pet1{
+		height: 200px;
+		width: 250px;
+		position: fixed;
+		left:615px; 
+		top:130px;
+		border: 4px outset #7FFFD4;
+		border-radius: 15px;
+	}
+	.PetsName1{
+		position: fixed;
+		left:900px;
+		top:200px;
+		font-size: 40px;
+		color:#7B68EE;
+	}
+	.Pet2{
+		height: 230px;
+		width: 200px;
+		position: fixed;
+		left:615px; 
+		top:350px;
+		border: 4px outset #7FFFD4;
+		border-radius: 15px;
+	}
+	.PetsName2{
+		position: fixed;
+		left:900px;
+		top:450px;
+		font-size: 40px;
+		color:#7B68EE;
+	}
+	.Button1{
+		position: fixed;
+		left: 950px;
+		top: 100px;
+		border:2px outset #4B0082;
+		border-radius: 5px;
+		background: #7B68EE;
+		color: white;
+	}
+	.Button2{
+		position: fixed;
+		left: 950px;
+		top: 550px;
+		border:2px outset #4B0082;
+		border-radius: 5px;
+		background: #7B68EE;
+		color: white;
+	}
+	.Button3{
+		position: fixed;
+		left: 600px;
+		top: 30px;
+		border:2px outset #4B0082;
+		border-radius: 5px;
+		background: #7B68EE;
+		color: white;
+	}
+	.Field{
+		border:2px outset #E6E6FA;
+		border-radius: 5px;
+		background: #4682B4;
+		color: white;
+	}
+</style>
+
+<body>
+	<div id="Rectangle" class="Rectangle">
+		<div>
+			<img id="image" src="1.png"class="Img" onClick="ImageSrc();"/>
+		</div>
+		<div><font face="serif">
+			<h1 class="text1"><i><b>Айси</b></i></h1>
+			<div class="text2">
+				<p><b>Полное имя:</b><i> Айси</i><br></p>
+				<div id="text" class="text">
+				<p>Она ведьма Льда и Холода, основательница и лидер Трикс.<br>
+				Характер ведьмы полностью соответствует её имени и маг.силе:<br>
+				она отличается холодностью, жестокостью и властностью<br>
+				и стремлением быть первой всегда и во всём; прирожденный<br>
+				лидер. Также Айси чрезвычайно амбициозна, настоящий стратег<br>
+				в действии, цинична и безразлична ко всему, прямолинейна<br>
+				в отличие от сестер. Помимо льда и холода довольно искусна<br>
+				в черной магии и тёмных искусствах.</p>
+				<p>Айси является принцессой Даймонда, планеты Волшебного<br>
+				измерения. Но однажды на её королевство напала неизвестная<br>
+				Ведьма-Шаман.После этого она решила стать сильнейшей<br>
+				ведьмой, чтобы спасти свое королевство.</p>
+				</div>
+				<div id="Pets" class="Pets">
+					<img src="Pet1.png" class="Pet1"/>
+					<img src="Pet2.png" class="Pet2">
+					<b class="PetsName1"><i>Стужа</i></b>
+					<b class="PetsName2"><i>Пепе</i></b>
+				</div>
+			</div>
+			<button onClick="Pets();" class="Button1">Питомцы</button>
+			<button onClick="BackGround();"class="Button2">Смена фона</button>
+		</font>
+		</div>
+	</div>
+</font>
+	<button onClick="Functions();" class="Button3">Работа с функциями</button>
+	<div id="Functions" class="RestangleForTheFunction">
+		<h1 style="position: fixed;left: 600px;top: 70px;"><b><i>Задание 1.1</i></b></h1>
+		<div style="position: fixed;top: 130px;">
+		<b style=""><i>Введите что-нибудь в поле:</i></b>
+		<input type="text" id="field1" class="Field">
+		<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;"onClick="Function1();">Вывод результата</button>
+			<div id="result1" style="display: none;">
+				<b style="position: fixed; left: 770px; top:130px;"><i>Ваш результат:</i></b>
+				<input style="position: fixed;left: 900px;top: 130px;" type="text" id="field2" class="Field">
+				<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white; position: fixed;left:600px;top:155px;"onClick="Display1();">Скрыть вывод результата</button>
+			</div>
+		</div>
+		
+		<h1 style="position: fixed;left: 600px;top: 180px;"><b><i>Задание 1.2</i></b></h1>
+		<div style="position: fixed;top: 235px;">
+			<b><i>Введите два аргумента:</i></b><br>
+			<b><i>Первый аргумент:</i></b>
+			<input type="text" id="field3" class="Field"><br>
+			<b><i>Второй аргумент:</i></b>
+			<input type="text" id="field4" class="Field">
+			<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;position:fixed;left:600px;top: 255px;"onClick="Function2();">Сложение аргументов</button>
+			<div id="result2" style="position: fixed;left: 800px;top: 255px;display: none;">
+				<b><i>Ваш результат:</i></b>
+				<input type="text" id="field5" class="Field">
+				<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;position:fixed;left:590px;top: 280px;"onClick="Display2();">Скрыть вывод результата</button>
+			</div>
+		</div>
+
+		<h1 style="position: fixed;left: 600px;top: 300px;"><b><i>Задание 1.3</i></b></h1>
+		<div style="position: fixed;top: 360px;">
+			<b><i>Введите массив по элементно:</i></b>
+			<input type="text" id="field6" class="Field">
+			<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;" onClick="CreateMassive();">Следующий элемент</button>
+			<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;" onClick="Function3();">Вывод результата</button><br><br>
+			<div id="result3" style="display: none;">
+				<b><i>Введенный вами массив:</i></b><br>
+				<input type="text" id="field7" class="Field" style="width: 845px;"><br><br>
+				<b><i>Ваш результат:</i></b><br>
+				<input type="text" id="field8" class="Field" style="width: 845px;"><br>
+				<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;position: fixed;left: 650px; top: 385px" onClick="ClearMassive();">Очистить массив</button>
+				<button style="border:2px outset #4B0082;border-radius:5px;background:#7B68EE;color:white;position: fixed;left: 784px; top: 385px" onClick="Display3();">Скрыть результат</button>
+			</div>
+		</div>
+	</div>
+<script>
+	var i=0;
+	var Image=document.getElementById("image");
+	var imgsrc=new Array('1.png','2.png','3.png');
+	function ImageSrc() {
+		i++; 
+		Image.src=imgsrc[i];
+		if(i==imgsrc.length-1)
+			{i=-1;}
+	}
+	function Pets(){
+		if(document.getElementById("text").style.display=="block"){
+			document.getElementById("text").style.display='none';
+			document.getElementById("Pets").style.display='block';
+		}
+		else {
+			document.getElementById("text").style.display='block';
+			document.getElementById("Pets").style.display='none';
+		}
+	}
+	function BackGround(){
+			if(document.getElementById("Rectangle").className=='Rectangle'){
+				document.getElementById("Rectangle").className='Rectangle1';
+			}
+			else{
+				document.getElementById("Rectangle").className='Rectangle'
+			}
+	}
+	function Functions(){
+		if(document.getElementById("Rectangle").style.display=="block"){
+			document.getElementById("Rectangle").style.display='none';
+			document.getElementById("Functions").style.display='block';
+		}
+		else {
+			document.getElementById("Rectangle").style.display='block';
+			document.getElementById("Functions").style.display='none';
+		}
+	}
+	function Task1(V){
+		return V;
+	}
+	function Function1(){
+		var V =document.getElementById("field1").value;
+		document.getElementById("field2").value=Task1(V);
+		document.getElementById("result1").style.display='block';
+	}
+	function Display1(){
+		document.getElementById("result1").style.display='none';
+	}
+	function Task2(V1,V2){
+		if(+V1 && +V2){
+			V1=parseFloat(V1);
+			V2=parseFloat(V2);
+			var sum=V1+V2;
+		}
+		else{
+			var sum=V1+V2;
+		}
+		return sum;
+	}
+	function Function2(){
+		var V1=document.getElementById("field3").value;
+		var V2=document.getElementById("field4").value;
+		document.getElementById("field5").value=Task2(V1,V2);
+		document.getElementById("result2").style.display='block';
+
+	}
+	function Display2(){
+		document.getElementById("result2").style.display='none';
+	}
+	var Massive=[];
+	function CreateMassive(){
+		var values=document.getElementById("field6").value;
+		Massive.push(values);
+		document.getElementById("field6").value='';
+	}
+	function PrintMassive(t){
+		var str='';
+		for(var j=0;j<Massive.length;j++){
+			str= str+"'"+Massive[j]+"' "
+		}
+		document.getElementById(t).value=str;
+	}
+	function ClearMassive(){
+		Massive.splice(0,Massive.length);
+	}
+	function Task3(){
+		for(var j=0;j<Massive.length;j++){
+			if(+Massive[j]){
+				Massive[j]=parseFloat(Massive[j]);
+				Massive[j]*=Massive[j];
+			}
+			else{
+				Massive[j]='0';
+			}
+		}
+	}
+	function Function3(){
+		PrintMassive("field7");
+		Task3();
+		PrintMassive("field8");
+		document.getElementById("result3").style.display="block";
+	}
+	function Display3(){
+		document.getElementById("result3").style.display="none";
+	}
+</script>
+</body>
